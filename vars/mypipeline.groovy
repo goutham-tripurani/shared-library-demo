@@ -8,7 +8,7 @@ pipeline {
         stage('checkout git') {
             steps {
                 echo "checkout git stage"
-                git branch: "${SCM_BRANCH}", credentialsId: 'goutham-tripurani:Goutham@1259', url: "${SCM_URL}"
+                git branch: "${params.SCM_BRANCH}", credentialsId: 'goutham-tripurani:Goutham@1259', url: "${params.SCM_URL}"
             }
         }
 
