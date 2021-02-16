@@ -1,17 +1,18 @@
 def call(){
 pipeline {
     agent any
-    parameters{
+    /*parameters{
         string(name: 'SCM_URL')
         string(name: 'SCM_BRANCH')
-    }
+    }*/
     stages {
-        stage('checkout git') {
+        /*stage('checkout git') {
             steps {
                 echo "checkout git stage"
-                git branch: "${params.SCM_BRANCH}", credentialsId: 'goutham-tripurani:Goutham@1259', url: "${params.SCM_URL}"
+                //git branch: "${params.SCM_BRANCH}", credentialsId: 'goutham-tripurani:Goutham@1259', url: "${params.SCM_URL}"
+                git branch: "", credentialsId: 'goutham-tripurani:Goutham@1259', url: ""
             }
-        }
+        }*/
 
         stage('build') {
             steps {
