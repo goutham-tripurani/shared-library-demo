@@ -2,8 +2,8 @@ def call(){
 pipeline {
     agent any
     parameters{
-        string(name: 'SCM_URL' description: 'Give URL of SCM to be build')
-        string(name: 'SCM_BRANCH' description: 'Give branch name of SCM to be build')
+        string(name: 'SCM_URL', description: 'Give URL of SCM to be build')
+        string(name: 'SCM_BRANCH', description: 'Give branch name of SCM to be build')
     }
     stages {
         stage('checkout git') {
