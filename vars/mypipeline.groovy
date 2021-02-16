@@ -1,3 +1,4 @@
+def call(){
 pipeline {
     agent any
     parameters{
@@ -52,4 +53,5 @@ pipeline {
             echo "pipeline failed"
         }
     }
+}
 }
