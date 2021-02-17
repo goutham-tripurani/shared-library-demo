@@ -1,4 +1,5 @@
-def call(SCM_BRANCH, SCM_URL){
+//def call(SCM_BRANCH, SCM_URL){
+def call(){
 pipeline {
     agent any
     options{
@@ -14,7 +15,7 @@ pipeline {
             steps {
                 echo "checkout git stage"
                 //git branch: "${params.SCM_BRANCH}", credentialsId: 'goutham-tripurani:Goutham@1259', url: "${params.SCM_URL}"
-                git branch: "${SCM_BRANCH}", credentialsId: 'goutham-tripurani:Goutham@1259', url: "${SCM_URL}"
+                //git branch: "${SCM_BRANCH}", credentialsId: 'goutham-tripurani:Goutham@1259', url: "${SCM_URL}"
             }
         }
 
