@@ -2,7 +2,8 @@ def call(){
 pipeline {
     agent any
     options{
-        timestamps()
+        //timestamps()
+        disableConcurrentBuilds()
     }
     /*parameters{
         string(name: 'SCM_URL')
