@@ -1,6 +1,9 @@
 def call(){
 pipeline {
     agent any
+    options{
+        timestamps()
+    }
     /*parameters{
         string(name: 'SCM_URL')
         string(name: 'SCM_BRANCH')
